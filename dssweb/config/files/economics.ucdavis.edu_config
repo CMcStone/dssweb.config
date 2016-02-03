@@ -18,8 +18,20 @@ location /psychology {
 location /people/szschei {
         deny all;
         return 404;
-        }
-
+        
+			}
+location /communication {
+ 			deny all;
+			return 404;
+			}
+location /iss {
+			deny all;
+			return 404;
+			}
+location /midnbrain {
+			deny all;
+			return 404;
+			}
     
 rewrite ^/people$ /directory-of-people redirect; 
 
