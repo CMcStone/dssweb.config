@@ -1,0 +1,18 @@
+
+location /psychology {
+        deny all;
+        return 404;
+        }
+location /economics {
+			deny all;
+			return 404;
+			}
+location /communication {
+ 			deny all;
+			return 404;
+			}
+
+    
+rewrite ^/people$ /directory-of-people redirect; 
+
+rewrite ^/people/faculty(.*)$ /directory-of-people/corefaculty redirect;
